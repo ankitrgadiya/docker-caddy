@@ -22,7 +22,4 @@ VOLUME /data
 EXPOSE 8000
 
 # Caddy Entrypoint
-ENTRYPOINT ["/caddy", "-host", "0.0.0.0", "-port", "8000"]
-
-# Default options
-CMD ["-root", "/data"]
+ENTRYPOINT ["/caddy", "-host", "0.0.0.0", "-port", "8000", "-root", "/data"]
